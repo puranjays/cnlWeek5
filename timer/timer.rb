@@ -4,13 +4,7 @@ class Timer
 		@seconds = seconds
 	end
 
-	def seconds
-		@seconds
-	end
-
-	def seconds=(seconds)
-		@seconds = seconds
-	end
+	attr_accessor :seconds
 
 	def zero_time(time)
 		"#{time}".rjust(2, "0")
@@ -50,3 +44,7 @@ class Timer
 		end
 	end
 end
+
+new_time = Timer.new
+new_time.seconds = 90
+puts new_time.time_string

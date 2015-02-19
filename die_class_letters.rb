@@ -1,3 +1,0 @@
-class Die
-
-end
